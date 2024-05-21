@@ -1,0 +1,213 @@
+/**
+ * @name SF6 Akuma Theme
+ * @author ViperKreuz & Fonsi
+ * @description Fan made theme for Akuma in Street Fighter 6
+ * @version 0.0.1
+ */
+
+ /* icon */
+#app-mount .guilds__2b93a .tutorialContainer_b06ae6 .listItem__48528:first-child .wrapper__8436d:before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  background: url(https://i.pinimg.com/originals/3f/e5/dd/3fe5dde62a1765cc23e163996ce31ae0.gif);
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s ease;
+}
+
+.homeIcon__560eb,
+.tutorialContainer_b06ae6 .childWrapper_a6ce15 {
+  display: none;
+}
+
+/* Using an installed font. Example using Comic Sans */
+::-webkit-input-placeholder,
+body,
+button,
+input,
+select,
+textarea {
+  /*font-family: "Halt Regular";
+  font-style: inherit; */
+  font-size: 100%; 
+  font-weight: 400;
+}
+
+:root {
+  /* SF6 Akuma Theme Declarations */
+  --akuma-theme-primary: rgb(14, 0, 26);
+  --akuma-theme-secondary: rgba(33, 6, 59, 0.772);
+  --akuma-theme-tertiary: rgba(28, 1, 54, 0.847);
+  --akuma-theme-profile-gradient-primary-color: rgb(37, 1, 71);
+  --akuma-theme-profile-gradient-secondary-color:  rgba(68, 1, 1, 0.452);
+
+
+
+  --background-gradient: linear-gradient(
+    0deg,
+    rgba(23, 0, 0, 0.445) 0%,
+    rgba(40, 0, 0, 0.877) 35%,
+    rgba(20, 0, 44, 0.897) 100%
+  );
+
+  /* Regular Discord Vars */
+  --background-primary: var(--akuma-theme-primary);
+  --background-secondary: var(--akuma-theme-secondary);
+  --background-tertiary: var(--akuma-theme-tertiary);
+
+  --background-secondary-alt: var(--akuma-theme-tertiary);
+
+  --channeltextarea-background: var(--akuma-theme-tertiary);
+
+  --profile-gradient-primary-color: var(--akuma-theme-profile-gradient-primary-color);
+  --profile-gradient-secondary-color: var(--akuma-theme-profile-gradient-secondary-color);
+
+}
+
+/* .wrapper__216eb {
+  background-color: #19014ddb;
+} */
+
+/*.guilds__2b93a,
+.listItem__48528 {
+  width: 72px;
+} */
+
+/*.wrapper__9916c,
+.svg__34dd4 {
+  width: 48px;
+  height: 48px;
+} */
+
+/* .sidebar_e031be {
+  --background-secondary: ;
+  background-color: #24015cd0;
+} */
+
+/* .container_f79ab4 {
+  --background-secondary: ;
+  background-color: rgba(0, 0, 0, 0.502);
+} */
+
+.chat__52833 {
+  --background-primary: rgb(from var(--akuma-theme-primary) r g b / 35%);
+}
+
+.app_de4237 {
+    background: radial-gradient(
+      circle,
+      rgba(136, 0, 0, 0.833) 0%,
+      rgba(29, 0, 64, 0.984) 60%
+    );
+  }
+  
+  .bg__12180 {
+    background-image: url("https://i.imgur.com/NU5HjLD.png");
+    background-size: 50%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+
+.bg__12180 {
+  background-image: url("https://i.imgur.com/NU5HjLD.png");
+  background-size: 50%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.theme-dark .themed_b152d4 {
+  --__header-bar-background: rgba(47, 1, 1, 0.678);
+}
+
+.titleBar__710b0 {
+  background: rgba(255, 0, 0, 0.178); 
+
+}
+
+.withFrame__5e49e {
+height: 18px;
+margin-top: 0px;
+padding-top: 4px;
+}
+
+/* .userPanelInner__3184c {
+  background: rgb(209, 209, 209); 
+} */
+
+.userPanelInnerThemed__651e4 {
+  background: linear-gradient(var(--akuma-theme-profile-gradient-primary-color),var(--akuma-theme-profile-gradient-secondary-color));
+}
+
+.userProfileInner__8ff35 {
+  background-image: url("https://i.imgur.com/eZFpoDV.png");
+  background-size: 85%;
+  background-position-x: center;
+  background-position-y: 3.5cm;
+  background-repeat: no-repeat;
+  background-color: rgba(22, 0, 59, 0.484);
+}
+
+.overlayBackground__345c9 {
+--profile-body-background-color: rgba(37, 0, 0, 0.564);
+}
+
+.theme-dark .scroller_e412fe::-webkit-scrollbar-track {
+  background: rgba(44, 0, 0, 0.71);
+  
+}
+
+.theme-dark .scroller_e412fe::-webkit-scrollbar-thumb {
+  background: rgb(54, 32, 84);
+
+}
+
+::-webkit-scrollbar { 
+  width: 10px !important;
+}
+
+.icon_ae0b42 {
+  color: red;
+} 
+
+.selected__1fc53 .icon_ae0b42 {
+  color: rgb(236, 2, 2) !important;
+}
+
+.clickable_ce0925:hover .icon_ae0b42 {
+  color: rgb(250, 129, 129);
+}
+
+.clickable_ce0925 .icon_ae0b42 {
+  color: rgb(124, 88, 240);
+}
+
+.scroller__1f498::-webkit-scrollbar-track {
+  background: rgba(44, 0, 0, 0.71);
+}
+
+.scroller__1f498::-webkit-scrollbar-thumb {
+  background: rgb(54, 32, 84);
+}
+
+.modeSelected__473f1 .link_ddbb36{
+  background: rgb(54, 32, 84);
+}
+
+.wrapper__612a5.modeSelected__473f1 .link_ddbb36:hover::before{
+  background: rgba(44, 0, 0, 0.772);
+  filter: brightness(100%);
+  border-radius: var(--radius-xs);
+}
+
+.link_ddbb36:hover::before{
+  background: rgb(26, 0, 53);
+}
