@@ -6,8 +6,8 @@
  * @Source https://github.com/metaphantom/SF6-Akuma-Theme/
  */
 
- /* icon */
-#app-mount .guilds__2b93a .tutorialContainer_b06ae6 .listItem__48528:first-child .wrapper__8436d:before {
+/* Home icon */
+.childWrapper_f90abb {
   content: "";
   border-radius: 50%;
   position: absolute;
@@ -15,15 +15,29 @@
   background-size: 120%;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--akuma-theme-secondary);
   height: 100%;
   width: 100%;
   transition: 0.2s ease;
+  > svg {
+    display: none;
+  }
 }
 
-.homeIcon__560eb,
-.tutorialContainer_b06ae6 .childWrapper_a6ce15 {
-  display: none;
+.acronym_f90abb {
+  background-image: none !important;
 }
+
+.wrapper_f90abb:hover .childWrapper_f90abb,
+.wrapper_f90abb.selected_f90abb .childWrapper_f90abb {
+  background-color: var(--akuma-theme-primary);
+  border-radius: 20%;
+}
+
+/* .homeIcon__560eb,
+.tutorialContainer_f9623d .childWrapper_f90abb {
+  display: none; -- Discontinued
+} */
 
 /* Using an installed font. Example using Comic Sans */
 ::-webkit-input-placeholder,
@@ -34,7 +48,7 @@ select,
 textarea {
   /*font-family: "Halt Regular";
   font-style: inherit; */
-  font-size: 100%; 
+  font-size: 100%;
   font-weight: 400;
 }
 
@@ -44,9 +58,7 @@ textarea {
   --akuma-theme-secondary: rgba(33, 6, 59, 0.772);
   --akuma-theme-tertiary: rgba(28, 1, 54, 0.847);
   --akuma-theme-profile-gradient-primary-color: rgb(37, 1, 71);
-  --akuma-theme-profile-gradient-secondary-color:  rgba(68, 1, 1, 0.452);
-
-
+  --akuma-theme-profile-gradient-secondary-color: rgba(68, 1, 1, 0.452);
 
   --background-gradient: linear-gradient(
     0deg,
@@ -64,9 +76,12 @@ textarea {
 
   --channeltextarea-background: var(--akuma-theme-tertiary);
 
-  --profile-gradient-primary-color: var(--akuma-theme-profile-gradient-primary-color);
-  --profile-gradient-secondary-color: var(--akuma-theme-profile-gradient-secondary-color);
-
+  --profile-gradient-primary-color: var(
+    --akuma-theme-profile-gradient-primary-color
+  );
+  --profile-gradient-secondary-color: var(
+    --akuma-theme-profile-gradient-secondary-color
+  );
 }
 
 /* .wrapper__216eb {
@@ -94,29 +109,21 @@ textarea {
   background-color: rgba(0, 0, 0, 0.502);
 } */
 
-.chat__52833 {
+/* Main Background */
+
+.chat_a7d72e {
   --background-primary: rgb(from var(--akuma-theme-primary) r g b / 35%);
 }
 
-.app_de4237 {
-    background: radial-gradient(
-      circle,
-      rgba(136, 0, 0, 0.833) 0%,
-      rgba(29, 0, 64, 0.984) 60%
-    );
-  }
-  
-  .bg__12180 {
-    background-image: url("https://i.imgur.com/NU5HjLD.png");
-    background-size: 50%;
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-  }
+.app_a01fb1 {
+  background: radial-gradient(
+    circle,
+    rgba(136, 0, 0, 0.833) 0%,
+    rgba(29, 0, 64, 0.984) 60%
+  );
+}
 
-
-.bg__12180 {
+.bg_d4b6c5 {
   background-image: url("https://i.imgur.com/NU5HjLD.png");
   background-size: 50%;
   background-position-x: center;
@@ -125,90 +132,121 @@ textarea {
   background-color: transparent;
 }
 
-.theme-dark .themed_b152d4 {
+.bg_d4b6c5 {
+  background-image: url("https://i.imgur.com/NU5HjLD.png");
+  background-size: 50%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.theme-dark .themed_e44302 {
   --__header-bar-background: rgba(47, 1, 1, 0.678);
 }
 
-.titleBar__710b0 {
-  background: rgba(255, 0, 0, 0.178); 
+/* Top Title bar */
 
+.titleBar_a934d8 {
+  background: rgba(255, 0, 0, 0.178);
 }
 
-.withFrame__5e49e {
-height: 18px;
-margin-top: 0px;
-padding-top: 4px;
+.withFrame_a934d8 {
+  height: 18px;
+  margin-top: 0px;
+  padding-top: 4px;
 }
 
 /* .userPanelInner__3184c {
   background: rgb(209, 209, 209); 
 } */
 
-.userPanelInnerThemed__651e4 {
-  background: linear-gradient(var(--akuma-theme-profile-gradient-primary-color),var(--akuma-theme-profile-gradient-secondary-color));
+/* User Profile */
+
+.userProfileInnerThemedNonPremium_c69a7b {
+  background: linear-gradient(
+    var(--akuma-theme-profile-gradient-primary-color),
+    var(--akuma-theme-profile-gradient-secondary-color)
+  );
 }
 
-.userProfileInner__8ff35 {
+.userProfileInner_c69a7b {
   background-image: url("https://i.imgur.com/eZFpoDV.png");
   background-size: 85%;
   background-position-x: center;
-  background-position-y: 3.5cm;
+  background-position-y: 3cm;
   background-repeat: no-repeat;
   background-color: rgba(22, 0, 59, 0.484);
 }
 
-.overlayBackground__345c9 {
---profile-body-background-color: rgba(37, 0, 0, 0.564);
+.overlayBackground_c69a7b {
+  --profile-body-background-color: rgba(37, 0, 0, 0.564);
 }
+
+/* Chat Icon Colours */
+
+.icon_e44302 {
+  color: red;
+}
+
+.selected_e44302 .icon_e44302 {
+  color: rgb(236, 2, 2) !important;
+}
+
+.clickable_e44302:hover .icon_e44302 {
+  color: rgb(250, 129, 129);
+}
+
+.clickable_e44302 .icon_e44302 {
+  color: rgb(124, 88, 240);
+}
+
+/* Scrollbar */
 
 .theme-dark .scroller_e412fe::-webkit-scrollbar-track {
   background: rgba(44, 0, 0, 0.71);
-  
 }
 
 .theme-dark .scroller_e412fe::-webkit-scrollbar-thumb {
   background: rgb(54, 32, 84);
-
 }
 
-::-webkit-scrollbar { 
+::-webkit-scrollbar {
   width: 10px !important;
 }
 
-.icon_ae0b42 {
-  color: red;
-} 
+/* Main Chat Scrollbar */
 
-.selected__1fc53 .icon_ae0b42 {
-  color: rgb(236, 2, 2) !important;
-}
-
-.clickable_ce0925:hover .icon_ae0b42 {
-  color: rgb(250, 129, 129);
-}
-
-.clickable_ce0925 .icon_ae0b42 {
-  color: rgb(124, 88, 240);
-}
-
-.scroller__1f498::-webkit-scrollbar-track {
+.scroller_e2e187::-webkit-scrollbar-track {
   background: rgba(44, 0, 0, 0.71);
 }
 
-.scroller__1f498::-webkit-scrollbar-thumb {
+.scroller_e2e187::-webkit-scrollbar-thumb {
   background: rgb(54, 32, 84);
 }
 
-.modeSelected__473f1 .link_ddbb36{
+/* Channel Scrollbar */
+
+.scroller_c43953::-webkit-scrollbar-track {
+  background: rgba(44, 0, 0, 0.71);
+}
+
+.scroller_c43953::-webkit-scrollbar-thumb {
   background: rgb(54, 32, 84);
 }
 
-.wrapper__612a5.modeSelected__473f1 .link_ddbb36:hover::before{
+/* Channel Colours */
+
+.modeSelected_d8bfb3 .link_d8bfb3 {
+  background: rgb(54, 32, 84);
+}
+
+.wrapper_d8bfb3.modeSelected_d8bfb3 .link_d8bfb3:hover::before {
   background: rgba(44, 0, 0, 0.772);
   filter: brightness(100%);
   border-radius: var(--radius-xs);
 }
 
-.link_ddbb36:hover::before{
+.link_d8bfb3:hover::before {
   background: rgb(26, 0, 53);
 }
